@@ -6,4 +6,8 @@ document.addEventListener('click', e => {
 		$burger.classList.toggle('is-active')
 		$plegableMenu.classList.toggle('is-active')
 	}
+	if (e.target.matches('.header__menu--mobile__link')) {
+		$burger.classList.remove('is-active')
+		$plegableMenu.classList.remove('is-active')
+	}
 })
