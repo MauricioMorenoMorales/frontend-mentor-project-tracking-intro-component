@@ -17,23 +17,25 @@ figure
 	margin 0
 
 img
-	max-height 100%
-	width auto
+	max-width 100%
+	height auto
 
 .header
 	position relative
+	z-index 100
 	display flex
 	justify-content space-between
 	padding 0 7%
 	align-items center
 	height 100px
 	&__figure
-		height 25px
+		width 25px
 	&__menu
 		&--desktop
 			display none
 		&--mobile
 			display none
+			background-color white
 			&__link
 				color VeryDarkBlue
 				text-decoration none
@@ -62,3 +64,44 @@ img
 				flex-direction column
 				box-shadow BoxShadow
 				border-radius 5px
+
+
+.main
+	&__figure
+		position relative
+		&__image
+			position relative
+			z-index 10
+			margin-left 80px
+		&__background
+			z-index 0
+			background-color lighten(DarkGrayishBlue, 50)
+			position absolute
+			width 50%
+			height 150%
+			top -100px
+			right 0
+			border-radius 0 0 0 100px
+
+@media screen and (min-width 800px)
+	.header
+		&__menu
+			&--mobile
+				display none
+				&.is-active
+					display none
+			&--desktop
+				display block
+				&__link
+					margin-right 30px
+					color VeryDarkBlue
+					text-decoration none
+					font-family FontFamilyHeadings
+					font-weight FontWeightHeadingBold
+					text-transform uppercase
+					&:nth-last-child(1)
+						margin-left 70px
+						color DarkGrayishBlue
+
+	.hamburger
+		display none
