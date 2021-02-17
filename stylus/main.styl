@@ -74,6 +74,73 @@ img
 	flex-direction column
 	&__illustration
 		margin-right -150px
+		position relative
+		&__figure
+			position relative
+			z-index 10
+		&__background
+			width 100%
+			position absolute
+			top -100px
+			bottom -50px
+			margin-left 50vw
+			background-color #edf2f6
+			z-index 1
+			border-radius 0 50px
+	&__text
+		padding 0 5%
+		margin-top 100px
+		&__superior-subtitle
+			display flex
+			align-items center
+			&__new
+				color white
+				background-color VeryDarkBlue
+				font-family FontFamilyHeadings
+				font-weight FontWeightHeadingBold
+				padding 3px 10px
+				border-radius 15px
+				text-transform uppercase
+				margin-right 15px
+			&__title
+				color DarkGrayishBlue
+				text-transform uppercase
+				font-size 1.3rem
+				letter-spacing 2px
+		&__title
+			margin 0
+			font-family FontFamilyHeadings
+			font-size 4rem
+			max-width 335px
+			text-transform uppercase
+			font-weight 700
+		&__paragraph
+			max-width 270px
+			color DarkGrayishBlue
+		&__buttons
+			display flex
+			max-width 290px
+			padding-bottom 100px
+			&__item--accent
+				height 40px
+				width 50%
+				background-color Red
+				color white
+				font-family FontFamilyHeadings
+				font-weight FontWeightHeadingBold
+				text-transform uppercase
+				border none
+				border-radius 5px
+			&__item--ghost
+				height 40px
+				width 50%
+				border none
+				background-color white
+				font-family FontFamilyHeadings
+				text-transform uppercase
+				color DarkGrayishBlue
+				letter-spacing 2px
+
 
 
 @media screen and (min-width 800px)
