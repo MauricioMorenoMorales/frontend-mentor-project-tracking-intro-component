@@ -1,0 +1,14 @@
+@media screen and (min-width: 1100px) {
+  .hero__text {
+    max-width: 700px;
+  }
+  .hero__text__title {
+    font-size: 6rem;
+  }
+  .hero__text__paragraph {
+    max-width: 280px;
+  }
+  .hero__text__buttons {
+    margin-top: 50px;
+  }
+}
